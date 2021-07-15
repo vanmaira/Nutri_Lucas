@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <style>
+       img{
+           width: 98%;
+       }
+       .carousel-inner{
+         background:#222;
+         min-height:500px;
+         display:flex;
+        }
+         
+        .container-card {
+	position:relative;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	margin:20px 0;
+	
+}
+
+.container-card .card{
+ position:relative; 
+ height:300px;
+ background:#fff;
+ display:flex;
+ width:45%;
+ margin:30px ;
+ padding:20px;
+}	
+
+
+.container-card .card .imgBx{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#333;
+	z-index:1;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+	transition:0.5s ease-in-out;	
+}
+
+.container-card .card:hover .imgBx{
+	 width:150px;
+	 height:150px;
+	 
+	 left:-55px;
+	 top:calc(50%-75px);
+	 transition:0.5s ease-in-out;
+	 background:#ff0057;	
+}
+
+.container-card .card:hover .imgBx img{
+	 width:250px;
+	 height:250px;
+	 justify-content:center;
+	 align-items:center;
+	 
+	 /* max-width:125px;*/
+}
+
+.container-card .card .imgBx:before{
+	 content:attr(data-text);
+	 position:absolute;
+	 bottom:0;
+	 left:0;
+	 width:100%;
+	 text-align:center;
+	 font-size:6em;
+	 color:rgba(255,255,255,.20);
+	 font-weight:700;
+	 }
+
+     .container-card .card .content{
+  position:absolute;
+  right:0;
+  width:calc(100% - 75px);
+  height:100%;
+  padding:30px;
+  display:flex;  
+  justify-content:center;
+  align-items:center;
+}
+
+
+.container-card .card .content h3{
+     margin-left:30%;
+	 margin-bottom:5px;
+	 font-size:24px;
+}	
+
+.container-card .card .content a{
+	 display:inline-block;
+	 margin-top:10px;
+	 padding:5px 10px;
+	 background:#333;
+	 color:#fff;
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+@media(max-width:992px){
+   
+   .container-card {
+	  width:100%; 
+	  flex-direction:column;
+	  align-items:center;
+    }
+   
+    .container-card .card{
+      width:400px;   
+    }
+
+   .container-card .card:hover .imgBx{	
+	 left:-25px;	 	
+    }
+
+   .container-card .card .content{  
+     width:calc(100% - 105px); 
+    }	
+
+}	 
+
+
+
+@media(max-width:768px){
+   
+    
+	  
+    .container-card .card{
+      max-width:280px;   
+    }
+    
+   .container-card .card .content{ 
+     margin-top:12%;   
+     width:calc(100% - 18px); 
+    }	
+   
+   .container-card .card .content h3{  
+     margin-left:50%; 
+    }	
+   .container-card .card .content p{  
+      
+	  font-size:13px;
+    }
+}	 
+
+
+
+
+
+
+
+
+
+    </style>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+ <main class="container-fluid">
+
+       <header>
+
+       </header>
+
+
+<section>
+
+          
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ 
+ 
+        <ol class="carousel-indicators">
+           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+         
+         
+         
+         <div class="carousel-inner">
+         
+         
+         
+         
+                <!-- 1ª parte do carrossel -->
+          <div class="carousel-item active">     
+            
+            
+            
+            
+            
+          <div class="container-card">	 
+                
+       
+               
+           <div class="card">	 
+            
+              <div class="imgBx" data-text="Nitratos:">	 
+               <img src="img1.jfif">
+              </div>	   
+              
+            <div class="content">	  
+             
+              <div>	   
+               <h3>Nitratos:</h3>		
+                <p>
+                    Tem função de vasodilatação e melhora a performance esportiva. O uso do suco de beterraba antes da prática de exercício físico reduz a pressão arterial sistêmica, o consumo de oxigênio, a produção e liberação do lactato sanguíneo (que causa fadiga) e, assim, aumenta o rendimento e melhora o desempenho no exercício físico. 
+                </p>		 
+                <a href="">leia mais</a> 	 
+              </div>   
+              
+            </div> 	  
+             
+           </div>	 	  	  
+             
+             
+             
+             
+             
+             
+           <div class="card">
+            
+              <div class="imgBx" data-text="Betalainas">	 
+               <img src="img2.jfif">
+              </div>   
+              
+             <div class="content">
+             
+              <div>
+               <h3> Betalainas:</h3>
+                <p>
+                    São responsáveis por pigmentação nos alimentos e potentes antioxidantes: as betaxantinas, com pigmentação amarela, e as betacianinas, com pigmentação vermelha.
+                </p>
+                <a href="">leia mais</a> 
+              </div>
+              
+             </div> 
+             
+           </div>
+           
+                   
+          </div>
+           
+           
+           
+         </div>		
+           
+           
+           
+           
+               <!-- 2ª parte do carrossel -->
+          <div class="carousel-item">	      
+            
+             
+           <div class="container-card">	 
+            
+            
+           <div class="card">
+            
+              <div class="imgBx" data-text="Text 3">	 
+               <img src="img3.jfif">
+              </div>
+              
+             <div class="content">
+             
+              <div>
+               <h3>Texto 3</h3>
+               <p>
+                A presença de betalaínas e de diferentes compostos fenólicos na beterraba confere a este vegetal propriedades antioxidantes com comprovada eficiência contra os danos gerados pelo estresse oxidativo e pela diminuição das LDL (o "colesterol ruim), assim diminuindo a chance de doenças cardiovasculares.
+                </p>
+                <a href="">leia mais</a> 
+              </div>
+              
+             </div> 
+             
+           </div>	 	  	  
+             
+             
+           <div class="card">
+            
+              <div class="imgBx" data-text="Texto 4">	 
+               <img src="img4.jfif">
+              </div>
+              
+             <div class="content">
+             
+              <div>
+               <h3>Texto 4</h3>
+                <p>
+                    A beterraba ainda contém pequenas concentrações de carotenóides e ácido ascórbico, que potencializam a sua capacidade antioxidante.
+                </p>
+                <a href="">leia mais</a> 
+              </div>
+              
+             </div> 
+             
+           </div>  
+            
+          </div>  
+            
+         </div>
+           
+           
+           
+             <!-- 3ª parte do carrossel -->
+          <div class="carousel-item">         
+            
+            
+           <div class="container-card">	 
+            
+            
+            <div class="card">
+            
+              <div class="imgBx" data-text="Água">	 
+               <img src="img5.jfif">
+              </div>
+              
+             <div class="content">
+             
+              <div>
+               <h3>Água</h3>
+               
+               <p>
+                Você já ouviu falar por aí sobre a quantidade ideal serem 2 litros por dia. Mas vejamos: Eu peso 70kg, pratico muita atividade física e transpiro bastante; minha irmã pesa 55Kg, não pratica atividade física, portanto não transpira tanto quanto eu. Será mesmo que devemos beber a mesma quantidade de água?
+               </p>
+                
+                <a href="">leia mais</a> 
+              </div>
+              
+             </div> 
+             
+            </div>	 	  	  
+             
+            <div class="card">
+            
+              <div class="imgBx" data-text="Colágeno">	 
+               <img src="img5.jfif">
+              </div>
+              
+             <div class="content">
+             
+              <div>
+               <h3>Colágeno</h3>
+               
+               <p>
+                O suplemento de colágeno é, basicamente, proteína e será quebrado pelo organismo e absorvido como aminoácidos, que vão para diversas partes do corpo, assim como qualquer proteína. Então a suplementação é desnecessária. Pode ser que ainda haja algum benefício com suplementação de colágeno tipo 2, para pessoas que tenham problemas articulares, como artrose, mas, ainda assim, o principal tratamento são os medicamentos. A suplementação viria apenas como uma ajuda.
+               </p>
+                
+                
+                <a href="">leia mais</a> 
+              </div>
+              
+             </div> 
+             
+           </div>
+                   
+          </div>	 
+            
+        </div>
+           
+       
+       
+       
+           
+       </div>
+         
+         
+         
+         
+         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         
+         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+         
+         
+         
+       </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+      
+
+
+ </main>
+
+
+<footer>
+
+</footer>
+
+
+
+
+
+
+
+
+
+          <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

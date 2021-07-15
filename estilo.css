@@ -1,0 +1,72 @@
+/* Paleta de cores do insta: */
+/* #56A679
+#EBF2EE
+#9BF2B1
+#BFF29B */
+
+
+
+.formulario{
+    background-image: linear-gradient(#EBF2E9, #9BF2B1);    
+     border: 2px solid;
+     box-shadow: 10px 10px #56A679 ;
+     border: 1px solid #BFF29B;
+     border-radius: 30px;
+     
+   }
+
+body{
+    background-image: url(img/logo2.jpeg);
+    background-size:cover;
+    background-color: blueviolet;
+   }
+   .navbar {
+    background: url(imagens/nutrição.png);
+
+    background-size: cover;
+    height: 335px;
+    margin-bottom: 30px;
+  }
+
+  
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #78BEEB;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1em;
+    background-color:  #9BF2B1;
+    margin-top: 20px;
+}
+
+.nome {
+    text-align: right;
+    width: 100%;
+}
+.insta {
+    width:350px;
+}
+.whatsapp-link {
+  position: fixed;
+  left: 97%;
+  bottom: 60%;
+  width: 40px;
+  height: 40px;
+  background-image: url(imagens/whatsapp-logo-1.png);
+  background-size: cover;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px #888;
+  z-index: 1000;
+}
+
+#footer{
+  display: flex;
+}
+#footer img{
+  width: 60px;
+  height: 60px;
+}
+
